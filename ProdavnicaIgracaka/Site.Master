@@ -89,10 +89,15 @@
                 SelectMethod="GetCategories" >
                 <ItemTemplate>
                     <b style="font-size: large; font-style: normal">
-                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
+                        <%--dodavanje GetRouteUrl (sledeca linija koda se brise kada se doda ova za getroute (<a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                            <%#: Item.CategoryName %></a>)
+                            <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
                         <%#: Item.CategoryName %>
+                        </a>--%>
+                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                            <%#: Item.CategoryName %>
                         </a>
-                    </b>
+                        </b>
                 </ItemTemplate>
                 <ItemSeparatorTemplate> | </ItemSeparatorTemplate>
             </asp:ListView>

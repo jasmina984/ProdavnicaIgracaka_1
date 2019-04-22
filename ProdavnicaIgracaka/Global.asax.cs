@@ -31,27 +31,27 @@ namespace ProdavnicaIgracaka
             roleActions.AddUserAndRole();
 
             // Dodavanje Routes (rute)
-            RegisterCustomRoutes(RouteTable.Routes);
+            //RegisterCustomRoutes(RouteTable.Routes);
         }
-        // Metoda RegisterCustomRoutes dodaje svaku rutu pozivanjem MapPageRoute metode objekta RouteCollection.
-        //Rute se definišu koristeći ime rute, URL rute i fizičku URL adresu.
-        void RegisterCustomRoutes(RouteCollection routes)
-        {
-            //"ProductsByCategoryRoute" je ime rute i koristi se za pozivanje rute kada je to potrebno.
-            //"Category/{categoryName}") definiše prijateljski zamenjeni URL koji može biti dinamičan na osnovu koda. 
-            //CategoryName je promenljiva koja će se koristiti za određivanje ispravne putanje rute.
-            //Ova ruta se koristi kada popunjavate kontrolu podataka vezama koje se generišu na osnovu podataka.
-            routes.MapPageRoute(
-                "ProductsByCategoryRoute",
-                "Category/{categoryName}",
-                "~/ProductList.aspx"
-            );
-            routes.MapPageRoute(
-                "ProductByNameRoute",
-                "Product/{productName}",
-                "~/ProductDetails.aspx"
-            );
+        //// Metoda RegisterCustomRoutes dodaje svaku rutu pozivanjem MapPageRoute metode objekta RouteCollection.
+        ////Rute se definišu koristeći ime rute, URL rute i fizičku URL adresu.
+        //void RegisterCustomRoutes(RouteCollection routes)
+        //{
+        //    //"ProductsByCategoryRoute" je ime rute i koristi se za pozivanje rute kada je to potrebno.
+        //    //"Category/{categoryName}") definiše prijateljski zamenjeni URL koji može biti dinamičan na osnovu koda. 
+        //    //CategoryName je promenljiva koja će se koristiti za određivanje ispravne putanje rute.
+        //    //Ova ruta se koristi kada popunjavate kontrolu podataka vezama koje se generišu na osnovu podataka.
+        //    routes.MapPageRoute(
+        //        "ProductsByCategoryRoute",
+        //        "Category/{categoryName}",
+        //        "~/ProductList.aspx"
+        //    );
+        //    routes.MapPageRoute(
+        //        "ProductByNameRoute",
+        //        "Product/{productName}",
+        //        "~/ProductDetails.aspx"
+        //    );
 
-        }
+        //}
     }
 }
