@@ -25,7 +25,7 @@ namespace ProdavnicaIgracaka.Logic
             // Prilikom kreiranja RoleManager objekta, prosledjen (kao parametar) je RoleStore object. 
             var roleMgr = new RoleManager<IdentityRole>(roleStore);
 
-            // Zatim kreiramo "canEdit" role ako vec ne postoji.
+            // Zatim kreiramo "admin" role ako vec ne postoji.
             if (!roleMgr.RoleExists("admin"))
             {
                 IdRoleResult = roleMgr.Create(new IdentityRole { Name = "admin" });
@@ -40,7 +40,7 @@ namespace ProdavnicaIgracaka.Logic
             };
             IdUserResult = userMgr.Create(appUser, "Pa$$word1");
 
-            // Ako je novi korisnik "canEdit" uspesno kreiran, dodajte korisniku "canEdit" ulogu "canEdit" (tj canEdit je ustvari administrator)
+            // Ako je novi korisnik "admin" uspesno kreiran, dodajte korisniku "admin" (role) ulogu admina
             if (!userMgr.IsInRole(userMgr.FindByEmail("administrator@prodavnicaigracaka.com").Id, "admin"))
             {
                 IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("administrator@prodavnicaigracaka.com").Id, "admin");
