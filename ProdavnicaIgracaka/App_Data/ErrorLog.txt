@@ -1,0 +1,161 @@
+********** 4/23/2019 1:38:22 AM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 1:47:34 AM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Inner Source: ProdavnicaIgracaka
+Inner Stack Trace: 
+   at ProdavnicaIgracaka._Default.Page_Load(Object sender, EventArgs e) in D:\ProdavnicaIgracaka - 20.04\ProdavnicaIgracaka\Default.aspx.cs:line 14
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 4/23/2019 1:48:41 AM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Inner Source: ProdavnicaIgracaka
+Inner Stack Trace: 
+   at ProdavnicaIgracaka._Default.Page_Load(Object sender, EventArgs e) in D:\ProdavnicaIgracaka - 20.04\ProdavnicaIgracaka\Default.aspx.cs:line 14
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 4/23/2019 1:50:06 AM **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: Error Page
+Stack Trace: 
+********** 4/23/2019 1:56:59 AM **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: Error Page
+Stack Trace: 
+********** 4/23/2019 1:57:21 AM **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: Error Page
+Stack Trace: 
+********** 4/23/2019 1:59:18 AM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Inner Source: ProdavnicaIgracaka
+Inner Stack Trace: 
+   at ProdavnicaIgracaka._Default.Page_Load(Object sender, EventArgs e) in D:\ProdavnicaIgracaka - 20.04\ProdavnicaIgracaka\Default.aspx.cs:line 14
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 4/23/2019 2:00:15 AM **********
+Exception Type: System.Exception
+Exception: The error was unhandled by application code.
+Source: Error Page
+Stack Trace: 
+********** 4/23/2019 2:05:54 AM **********
+Exception Type: System.InvalidOperationException
+Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   at ProdavnicaIgracaka._Default.Page_Load(Object sender, EventArgs e) in D:\ProdavnicaIgracaka - 20.04\ProdavnicaIgracaka\Default.aspx.cs:line 14
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 4/23/2019 2:37:18 AM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:30:24 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:30:47 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:32:18 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:33:19 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:33:48 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:36:40 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:47:36 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 7:49:24 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 4/23/2019 8:05:20 PM **********
+Exception Type: System.Web.HttpException
+Exception: An HTTP error occurred. Page Not found. Please try again.
+Source: customErrors section - Web.config
+Stack Trace: 

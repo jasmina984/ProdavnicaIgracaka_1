@@ -8,7 +8,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace ProdavnicaIgracaka.Logic
 {
-    public class RoleActions
+    internal class RoleActions
     {
         internal void AddUserAndRole()
         {

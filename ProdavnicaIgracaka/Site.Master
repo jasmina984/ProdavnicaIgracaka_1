@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Prodavnica Igracaka</title>
+    <title><%: Page.Title %> - Prodavnica Igračaka</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Prodavnica Igracaka</a>
+                    <a class="navbar-brand" runat="server" href="~/">Prodavnica Igračaka</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -89,12 +89,9 @@
                 SelectMethod="GetCategories" >
                 <ItemTemplate>
                     <b style="font-size: large; font-style: normal">
-                        <%--dodavanje GetRouteUrl (sledeca linija koda se brise kada se doda ova za getroute (<a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
-                            <%#: Item.CategoryName %></a>)
-                            <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
-                        <%#: Item.CategoryName %>
-                        </a>--%>
-                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                       
+                      
+                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>">
                             <%#: Item.CategoryName %>
                         </a>
                         </b>
@@ -107,7 +104,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Prodavnica Igracaka</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Prodavnica Igračaka</p>
             </footer>
         </div>
     </form>

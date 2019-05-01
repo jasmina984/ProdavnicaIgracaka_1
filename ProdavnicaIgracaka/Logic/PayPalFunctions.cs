@@ -198,6 +198,8 @@ public class NVPAPICaller
         catch (Exception)
         {
             // No logging for this tutorial.
+            // Log the exception.
+            // ProdavnicaIgracaka.Logic.ExceptionUtility.LogException(e, "HttpCall in PayPalFunction.cs");
         }
 
         //Retrieve the Response returned from the NVP API call to PayPal.

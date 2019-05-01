@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckoutError.aspx.cs" Inherits="ProdavnicaIgracaka.Checkout.CheckoutError" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Checkout Error</h1>
+    <h1>Greška u porudzbini</h1>
     <p></p>
     <table id="ErrorTable">
         <tr>

@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Detalji o proizvodu" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="ProdavnicaIgracaka.ProductDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
 <asp:FormView ID="productDetail" runat="server" ItemType="ProdavnicaIgracaka.Models.Product" SelectMethod="GetProduct" RenderOuterTable="false">
         <ItemTemplate>
             <div>
@@ -9,8 +10,8 @@
             <table>
                 <tr>
                     <td>
-                        <img src="/Catalog/Images/<%#:Item.ImagePath %>"
-                            style="border: solid; height: 300px;" alt="<%#:Item.ProductName %>" />
+                       
+                        <img src="/Catalog/Images/<%#:Item.ImagePath %>" style="border: solid; height: 300px;" />
                     </td>
                     <td>&nbsp;</td>
                     <td style="vertical-align: top; text-align: left;">
@@ -25,5 +26,6 @@
             </table>
         </ItemTemplate>
     </asp:FormView>
+   
 </asp:Content>
 

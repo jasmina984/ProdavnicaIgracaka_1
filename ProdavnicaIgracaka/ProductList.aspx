@@ -26,26 +26,15 @@
                         <table>
                             <tr>
                                 <td>
-                                    <%--dodavanje getrouteurl
-                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productName = Item.ProductName}) %>">
+                                <a href="<%#: GetRouteUrl("ProductByNameRoute", new {prdId = Item.ProductID}) %>">
                                     <image src='/Catalog/Images/Thumbs/<%#:Item.ImagePath%>'
-                                     width="100" height="75" border="1" /></a>--%>
-
-                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID %>">
-                                       <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath %>" width="100" height="75" style="border: solid" /></a>
-                                 </td>
+                                     width="100" height="75" border="1" /></a> 
+                                </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <%--dodavanje getrouteurl
-                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productName = Item.ProductName}) %>">
-                                      <%#:Item.ProductName%></a>--%>
-
-                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID %>">
-                                        <span>
-                                            <%#:Item.ProductName %>
-                                        </span>
-                                    </a>
+                                <td>                                
+                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {prdId = Item.ProductID}) %>">
+                                      <%#:Item.ProductName%></a>
                                     <br />
                                     <span>
                                         <b>Cena: </b><%#:String.Format("{0:c}",Item.UnitPrice) %>
@@ -55,7 +44,7 @@
                                         Stranica AddToCart.aspx će pozvati metod AddToCart u klasi ShoppingCart koju sam ranije dodala.
                                         Sada  dodajem vezu "Dodaj u korpu" i na stranicu ProductList.aspx i na stranicu 
                                         ProductDetails.aspx. Ovaj link će uključiti ID proizvoda koji se preuzima iz baze podataka. -->
-                                    <a href="AddToCart.aspx?productID=<%#:Item.ProductID %>">
+                                    <a href="/AddToCart.aspx?ProductID=<%#:Item.ProductID %>">
                                         <span class="ProductListItem">
                                             <b>Dodaj u korpu</b>
                                         </span>

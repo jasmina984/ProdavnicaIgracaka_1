@@ -54,7 +54,7 @@ namespace ProdavnicaIgracaka.Models
                 new Product
                 {
                     ProductID = 1,
-                    ProductName = "Kabriolet Bentley Continental ",
+                    ProductName = "Kabriolet Bentley Continental",
                     Description = "Ovaj kabriolet je brz! Burago Bentley Continental Supers je u razmeri 1/18." +
                                   "Motor pokrece baterija bazirana na neutrinu (nije ukljucena).Napunite ga i pustite! ",
                     ImagePath="bentley.jpg",
@@ -220,6 +220,7 @@ namespace ProdavnicaIgracaka.Models
             return products;
         }
 
+       
     }
 
 }
