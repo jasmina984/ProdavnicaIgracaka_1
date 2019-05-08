@@ -1,7 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ProdavnicaIgracaka.SiteMaster" %>
 
 <!DOCTYPE html>
-
+<%--U ASP.NET Veb Forms, master stranice vam omogućuju da kreirate konzistentan raspored za stranice u  aplikaciji. 
+Master stranica definiše izgled i standardno ponašanje koje želite za sve stranice (ili grupu stranica) u aplikaciji.--%>
 <html lang="sr">
 <head runat="server">
     <meta charset="utf-8" />

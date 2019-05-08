@@ -16,7 +16,9 @@ namespace ProdavnicaIgracaka
         {
 
         }
-        
+        //Ovde imamo samo deklarisanu metodu GetProducts koja predstavlja vrednost prethodno pomenutog svojstva SelectMethod 
+        //i vraca tip IQueriable<Products>-obezbeđuje funkcionalnost za procenu upita prema određenom izvoru podataka 
+        //gde je tip podataka(Proizvodi) poznat.
         public IQueryable<Product> GetProducts(
                             [QueryString("id")] int? categoryId,
                             [RouteData] string categoryName)
@@ -26,26 +28,19 @@ namespace ProdavnicaIgracaka
 
             if (categoryId.HasValue && categoryId > 0)
             {
+                //vrati sve proizvode cija kolona CategoryID je ista kao categoryId  koji je dosao iz query string-a jer koristimo IQueryable
                 query = query.Where(p => p.CategoryID == categoryId);
             }
-
+            //String.Compare vraca nulu ukoliko nema razlika izmedju naziva kategorije na proizvodu i categoryName prosledjenog kroz route url.
             if (!String.IsNullOrEmpty(categoryName))
             {
                 query = query.Where(p =>
                     String.Compare(p.Category.CategoryName,
                     categoryName) == 0);
             }
+            //Te ce se tako query vratiti samo za proizvode kojima je kategorija tog naziva.
             return query;
         }
-        //public IQueryable<Product> GetProducts([QueryString("id")] int? categoryId)
-        //{
-        //    var _db = new ProdavnicaIgracaka.Models.ProductContext();
-        //    IQueryable<Product> query = _db.Products;
-        //    if (categoryId.HasValue && categoryId > 0)
-        //    {
-        //        query = query.Where(p => p.CategoryID == categoryId);
-        //    }
-        //    return query;
-        //}
+        
     }
 }

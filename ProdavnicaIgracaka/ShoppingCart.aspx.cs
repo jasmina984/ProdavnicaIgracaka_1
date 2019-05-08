@@ -33,7 +33,7 @@ namespace ProdavnicaIgracaka
                     lblTotal.Text = "";
                     ShoppingCartTitle.InnerText = "Korpa je prazna";
                     UpdateBtn.Visible = false;
-                    //CheckoutImageBtn.Visible = false;
+                    CheckoutImageBtn.Visible = false;
                 }
             }
         }

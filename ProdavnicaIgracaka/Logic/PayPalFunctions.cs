@@ -33,9 +33,9 @@ public class NVPAPICaller
     //Replace <Your API Username> with your API Username
     //Replace <Your API Password> with your API Password
     //Replace <Your Signature> with your Signature
-    public string APIUsername = "<Your API Username>";
-    private string APIPassword = "<Your API Password>";
-    private string APISignature = "<Your Signature>";
+    public string APIUsername = "korolijavukan-facilitator_api1.gmail.com";
+    private string APIPassword = "NVJXQ33BKVWWLMTC";
+    private string APISignature = "AR6jfZ-xy9rVRwbk5sa6I.SAgPkdA.J1niuNJKtiSFgRs22TxZ3NWq4O";
     private string Subject = "";
     private string BNCode = "PP-ECWizard";
 

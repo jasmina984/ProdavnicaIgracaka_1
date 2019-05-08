@@ -14,6 +14,7 @@
                         <img src="/Catalog/Images/<%#:Item.ImagePath %>" style="border: solid; height: 300px;" />
                     </td>
                     <td>&nbsp;</td>
+                   <%-- Vertikalno poravnanje sa vrha i poravnanje teksta s leva--%>
                     <td style="vertical-align: top; text-align: left;">
                         <b>Opis proizvoda:</b><br /><%#:Item.Description  %>
                         <br />
@@ -21,6 +22,11 @@
                         <br />
                         <span><b>Sifra artikla:</b>&nbsp;<%#:Item.ProductID %></span>
                         <br />
+                        <a href="/AddToCart.aspx?ProductID=<%#:Item.ProductID %>">
+                    <span class="ProductListItem">
+                        <b>Dodaj u korpu</b>
+                    </span>
+                </a>
                     </td>
                 </tr>
             </table>

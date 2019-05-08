@@ -72,6 +72,9 @@ namespace ProdavnicaIgracaka
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Kada se stranica učita, kod proverava da li je prijavljeni korisnik imao ulogu „admina“. 
+            //Ako je korisnik administrator, vidljiv je element raspona koji sadrži vezu do stranice AdminPage.aspx 
+            //(a time i veze unutar raspona).
             if (HttpContext.Current.User.IsInRole("admin"))
             {
                 adminLink.Visible = true;

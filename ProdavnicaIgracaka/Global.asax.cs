@@ -11,6 +11,7 @@ using ProdavnicaIgracaka.Models;
 using ProdavnicaIgracaka.Logic;
 
 namespace ProdavnicaIgracaka
+//Datoteka Global.asax se može koristiti za obradu aplikacionih događaja ili metoda.
 {
     public class Global : HttpApplication
     {
@@ -55,9 +56,9 @@ namespace ProdavnicaIgracaka
         }
         void Application_Error(object sender, EventArgs e)
         {
-            // Code that runs when an unhandled error occurs.
+            // Kod koji se pokreće kada se desi neobrađena greška.
 
-            // Get last error from the server
+            //Uzeti poslednju grešku sa servera
             Exception exc = Server.GetLastError();
 
             if (exc is HttpUnhandledException)

@@ -24,7 +24,9 @@ namespace ProdavnicaIgracaka.Admin
                 LabelRemoveStatus.Text = "Proizvod je uklonjen!";
             }
         }
-
+        // Kada se klikne na AddProductButton, kod proverava HasFile svojstvo kontrole FileUpload. 
+        //Ako kontrola ima datoteku i ako je dozvoljen tip datoteke (na osnovu ekstenzije datoteke), slika se čuva u \
+        //folderu Slike i folderu Images / Thumbs aplikacije.
         protected void AddProductButton_Click(object sender, EventArgs e)
         {
             Boolean fileOK = false;
@@ -78,6 +80,7 @@ namespace ProdavnicaIgracaka.Admin
         }
         public IQueryable GetCategories()
         {
+            //metoda GetCategories mora da instancira bazu i onda iz baze uzima samo sadrzaj tabele Categories
             var _db = new ProdavnicaIgracaka.Models.ProductContext();
             IQueryable query = _db.Categories;
             return query;
@@ -92,6 +95,12 @@ namespace ProdavnicaIgracaka.Admin
 
         protected void RemoveProductButton_Click(object sender, EventArgs e)
         {
+            //u ovoj metodi uzimamo selectovni proizvod iz liste na osnovu DataValueField = "ProductID"
+            //onda pokusamo da "dovucemo" taj proizvod iz tabele Products.
+            //imamo proveru da li je null jer FirstOrDefault vraca null ukoliko ne pronadje taj proizvod.
+            //ako nije NULL brisemo ga iz tabele
+            //i potrebno je pozvati metodu na kontextu
+            //kako bi se izmene sacuvale.
             using (var _db = new ProdavnicaIgracaka.Models.ProductContext())
             {
                 int productId = Convert.ToInt16(DropDownRemoveProduct.SelectedValue);

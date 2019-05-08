@@ -5,8 +5,12 @@
             <hgroup>
                 <h2><%: Page.Title  %></h2>
             </hgroup>
+           <%-- Za prikaz liste proizvod-a koristimo ASP:ListView kontrolu. Ova kontrola ce prikazati podatke na osnovu svojstva SelectMethod 
+            - GetProducts metode.--%>
             <asp:ListView ID="productList" runat="server" DataKeyNames="ProductID" GroupItemCount="4" ItemType="ProdavnicaIgracaka.Models.Product" SelectMethod="GetProducts">
                 <EmptyDataTemplate>
+                    <%--U okviru ove liste imamo definisan EmptyDataTemplate - template koji ce biti iskoriscen ukoliko SelectMethod 
+                    definisana na view-u ne vrati nikakve podatke iz baze, kao I EmptyItemTemplate.--%>
                     <table>
                         <tr>
                             <td>Podaci nisu vraceni.</td>
@@ -23,9 +27,15 @@
                 </GroupTemplate>
                 <ItemTemplate>
                     <td runat="server">
+                        <%--Svi proizvodi ce imati sliku, naziv, cenu i link(dugme) kojim se poziva akcija dodavanja prozivoda u korpu.--%>
                         <table>
                             <tr>
                                 <td>
+                                    <%--Ovde je primenjen UrlRouting – koriscenjem metode GetRouteUrl iskoristili smo prethodno definisanu rutu 
+                                    u Global.asax file-u (gde smo deklarisali rute i njihove parametre).Tako ovde osim navedenog naziva rute,
+                                    moramo navesti parametre koje ova ruta ocekuje, u ovom slucaju to je prdId.
+                                    Koriscenjem Routing-a postize se koriscenje friendly url-a umesto urla sa query stringom. 
+                                    Nema vise ? = & nije klasican query string -  sad je friendly--%>
                                 <a href="<%#: GetRouteUrl("ProductByNameRoute", new {prdId = Item.ProductID}) %>">
                                     <image src='/Catalog/Images/Thumbs/<%#:Item.ImagePath%>'
                                      width="100" height="75" border="1" /></a> 
